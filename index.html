@@ -26,12 +26,12 @@
 		</div>
 	</div>
 
-	<div class="pane-contain">
+	<div class="pane-contain-wide">
 		<div id="pane3" class="pane">
 			<div class="inner-contain">
 				<div class="copy">
 					<h1>Pane 3-b</h1>
-					<a onclick="pane3slide()" class="button" id="button3"><</a>
+					<a onclick='pane_slide("pane3-b")' class="button" id="button3"><</a>
 				</div>
 			</div>
 		</div>
@@ -39,8 +39,7 @@
 			<div class="inner-contain">
 				<div class="copy">
 					<h1>Pane 3-b</h1>
-					<a href="#pane4" class="button" id="button3-b">Press</a>
-					<a onclick="pane3slideback()" class="button">></a>
+					<a onclick='pane_slideback("pane3-b")' class="button">></a>
 				</div>
 			</div>
 		</div>
@@ -56,12 +55,21 @@
 		</div>
 	</div>
 
-
-	<div id="pane5" class="pane">
-		<div class="inner-contain">
-			<div class="copy">
-				<h1>Pane 5</h1>
-				<a href="#pane1" class="button" id="button5">Press</a>
+	<div class="pane-contain-tall">
+		<div id="pane5" class="pane">
+			<div class="inner-contain">
+				<div class="copy">
+					<h1>Pane 5</h1>
+					<a onclick='pane_slidedown("pane5")' class="button" id="button5">\/</a>
+				</div>
+			</div>
+		</div>
+		<div id="pane5-b" class="pane">
+			<div class="inner-contain">
+				<div class="copy">
+					<h1>Pane 5-b</h1>
+					<a onclick='pane_slideback("pane5")' class="button" id="button5-b">^</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -76,12 +84,16 @@ window.addEventListener('load', function() {
 }, false);
 </script>
 <script type="text/javascript">
-	function pane3slide(){
-		var pane3b = document.getElementById("pane3-b");
-		pane3b.className = pane3b.className + " slide";
+	function pane_slide($id){
+		var pane = document.getElementById($id);
+		pane.className = pane.className + " slideLeft";
 	};
-	function pane3slideback(){
-		document.getElementById("pane3-b").className = "pane";
+	function pane_slideback($id){
+		document.getElementById($id).className = "pane";
+	};
+	function pane_slidedown($id){
+		var pane = document.getElementById($id);
+		pane.className = pane.className + " slideDown";
 	};
 </script>
 

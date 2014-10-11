@@ -35,12 +35,29 @@ h1{
 	color: #FFFFFF;
 	font-size: 48px;
 }
-.pane-contain{
+.pane-contain-wide{
 	height: 100%;
 	width: 200%;
 	.pane{
 		height: 100%;
 		width: 50%;
+		display: inline-block;
+		float: left;
+		-webkit-overflow-scrolling: touch;
+	}
+	clear: both;
+}
+.pane-contain-tall{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	.pane{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
 		display: inline-block;
 		float: left;
 		-webkit-overflow-scrolling: touch;
@@ -96,8 +113,16 @@ h1{
 }
 #pane5{
 	background-color: #DA6060;
+	z-index: 1;
 	#button5{
 		color:#DA6060;
+	}
+}
+#pane5-b{
+	background-color: #AA6060;
+	z-index: 0;
+	#button5-b{
+		color:#AA6060;
 	}
 }
 
@@ -126,7 +151,10 @@ h1{
 
 
 
-.slide{
+.slideLeft{
 	@include transform(translate(-100%,0));
+}
+.slideDown{
+	@include transform(translate(0,100%));
 }
 
