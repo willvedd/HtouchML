@@ -127,6 +127,6 @@ h1{
 
 
 .slide{
-	transform: translate(-100%,0);
+	@include transform(translate(-100%,0));
 }
 

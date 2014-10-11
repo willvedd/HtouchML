@@ -58,4 +58,4 @@ h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 .button:active { margin-top: 52px; }
 
 /* line 129, styles.scss */
-.slide { transform: translate(-100%, 0); }
+.slide { -webkit-transform: translate(-100%, 0); -moz-transform: translate(-100%, 0); -ms-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
