@@ -15,6 +15,10 @@ h1{
 	color: #FFFFFF;
 	font-size: 48px;
 }
+.pane-contain{
+	height: 100%;
+	width: 100%;
+}
 .pane{
 	height: 100%;
 	width: 100%;
@@ -43,9 +47,24 @@ h1{
 	}
 }
 #pane3{
+	display: inline-block;
 	background-color: #1478BB;
 	#button3{
 		color: #1478BB;
+	}
+}
+#pane3-2{
+	display: inline-block;
+	background-color: #1438BB;
+	#button3{
+		color: #1438BB;
+	}
+}
+#pane3-2{
+	display: inline-block;
+	background-color: #1278BB;
+	#button3{
+		color: #1278BB;
 	}
 }
 #pane4{

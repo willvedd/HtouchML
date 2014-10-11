@@ -11,36 +11,49 @@ body { height: 100%; width: 100%; }
 h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 
 /* line 18, styles.scss */
-.pane { height: 100%; width: 100%; display: block; }
+.pane-contain { height: 100%; width: 100%; }
+
 /* line 22, styles.scss */
-.pane .inner-contain { display: table; width: 100%; height: 100%; }
+.pane { height: 100%; width: 100%; display: block; }
 /* line 26, styles.scss */
+.pane .inner-contain { display: table; width: 100%; height: 100%; }
+/* line 30, styles.scss */
 .pane .inner-contain .copy { display: table-cell; vertical-align: middle; text-align: center; }
 
-/* line 33, styles.scss */
+/* line 37, styles.scss */
 #pane1 { background-color: #7AC7AB; }
-/* line 35, styles.scss */
+/* line 39, styles.scss */
 #pane1 #button1 { color: #7AC7AB; }
 
-/* line 39, styles.scss */
+/* line 43, styles.scss */
 #pane2 { background-color: #7FCAE7; }
-/* line 41, styles.scss */
+/* line 45, styles.scss */
 #pane2 #button2 { color: #7FCAE7; }
 
-/* line 45, styles.scss */
-#pane3 { background-color: #1478BB; }
-/* line 47, styles.scss */
+/* line 49, styles.scss */
+#pane3 { display: inline-block; background-color: #1478BB; }
+/* line 52, styles.scss */
 #pane3 #button3 { color: #1478BB; }
 
-/* line 51, styles.scss */
+/* line 56, styles.scss */
+#pane3-2 { display: inline-block; background-color: #1438BB; }
+/* line 59, styles.scss */
+#pane3-2 #button3 { color: #1438BB; }
+
+/* line 63, styles.scss */
+#pane3-2 { display: inline-block; background-color: #1278BB; }
+/* line 66, styles.scss */
+#pane3-2 #button3 { color: #1278BB; }
+
+/* line 70, styles.scss */
 #pane4 { background-color: #775EA3; }
-/* line 53, styles.scss */
+/* line 72, styles.scss */
 #pane4 #button4 { color: #775EA3; }
 
-/* line 57, styles.scss */
+/* line 76, styles.scss */
 #pane5 { background-color: #DA6060; }
-/* line 59, styles.scss */
+/* line 78, styles.scss */
 #pane5 #button5 { color: #DA6060; }
 
-/* line 67, styles.scss */
+/* line 86, styles.scss */
 .button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 75px; height: 75px; width: 80%; max-width: 200px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
