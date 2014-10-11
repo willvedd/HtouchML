@@ -1,6 +1,26 @@
+
+
+@mixin transform($transform) {
+	-webkit-transform:	$transform;
+	-moz-transform:		$transform;
+	-ms-transform:		$transform;
+	-o-transform: 		$transform;
+	transform:			$transform;
+}
+ 
+@mixin transition($property, $duration, $function: linear) {	
+	-webkit-transition: $property $duration $function;
+	-moz-transition: 	$property $duration $function;
+	-ms-transition: 	$property $duration $function;
+	-o-transition: 		$property $duration $function;
+	transition: 		$property $duration $function;
+}
+
+
 *{
 	padding: 0;
 	margin: 0;
+	@include transition(all,.33s);
 }
 html{
 	height: 100%;
@@ -17,7 +37,15 @@ h1{
 }
 .pane-contain{
 	height: 100%;
-	width: 100%;
+	width: 200%;
+	.pane{
+		height: 100%;
+		width: 50%;
+		display: inline-block;
+		float: left;
+		-webkit-overflow-scrolling: touch;
+	}
+	clear: both;
 }
 .pane{
 	height: 100%;
@@ -47,26 +75,19 @@ h1{
 	}
 }
 #pane3{
-	display: inline-block;
 	background-color: #1478BB;
 	#button3{
 		color: #1478BB;
 	}
 }
-#pane3-2{
-	display: inline-block;
-	background-color: #1438BB;
-	#button3{
-		color: #1438BB;
+#pane3-b{
+	background-color: #E0CF52;
+	#button3-b{
+		color: #E0CF52;
 	}
+	
 }
-#pane3-2{
-	display: inline-block;
-	background-color: #1278BB;
-	#button3{
-		color: #1278BB;
-	}
-}
+
 #pane4{
 	background-color: #775EA3;
 	#button4{
@@ -99,6 +120,13 @@ h1{
 	background-color: #ffffff;
 	border: 1px solid #eeeeee;
 	&:active{
-		margin-top: 2px;
+		margin-top: 52px;
 	}
 }
+
+
+
+.slide{
+	transform: translate(-100%,0);
+}
+

@@ -1,61 +1,61 @@
-/* line 1, styles.scss */
-* { padding: 0; margin: 0; }
+/* line 20, styles.scss */
+* { padding: 0; margin: 0; -webkit-transition: all 0.33s linear; -moz-transition: all 0.33s linear; -ms-transition: all 0.33s linear; -o-transition: all 0.33s linear; transition: all 0.33s linear; }
 
-/* line 5, styles.scss */
+/* line 25, styles.scss */
 html { height: 100%; width: 100%; }
 
-/* line 9, styles.scss */
+/* line 29, styles.scss */
 body { height: 100%; width: 100%; }
 
-/* line 13, styles.scss */
+/* line 33, styles.scss */
 h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 
-/* line 18, styles.scss */
-.pane-contain { height: 100%; width: 100%; }
+/* line 38, styles.scss */
+.pane-contain { height: 100%; width: 200%; clear: both; }
+/* line 41, styles.scss */
+.pane-contain .pane { height: 100%; width: 50%; display: inline-block; float: left; -webkit-overflow-scrolling: touch; }
 
-/* line 22, styles.scss */
+/* line 50, styles.scss */
 .pane { height: 100%; width: 100%; display: block; }
-/* line 26, styles.scss */
+/* line 54, styles.scss */
 .pane .inner-contain { display: table; width: 100%; height: 100%; }
-/* line 30, styles.scss */
+/* line 58, styles.scss */
 .pane .inner-contain .copy { display: table-cell; vertical-align: middle; text-align: center; }
 
-/* line 37, styles.scss */
+/* line 65, styles.scss */
 #pane1 { background-color: #7AC7AB; }
-/* line 39, styles.scss */
+/* line 67, styles.scss */
 #pane1 #button1 { color: #7AC7AB; }
 
-/* line 43, styles.scss */
+/* line 71, styles.scss */
 #pane2 { background-color: #7FCAE7; }
-/* line 45, styles.scss */
+/* line 73, styles.scss */
 #pane2 #button2 { color: #7FCAE7; }
 
-/* line 49, styles.scss */
-#pane3 { display: inline-block; background-color: #1478BB; }
-/* line 52, styles.scss */
+/* line 77, styles.scss */
+#pane3 { background-color: #1478BB; }
+/* line 79, styles.scss */
 #pane3 #button3 { color: #1478BB; }
 
-/* line 56, styles.scss */
-#pane3-2 { display: inline-block; background-color: #1438BB; }
-/* line 59, styles.scss */
-#pane3-2 #button3 { color: #1438BB; }
+/* line 83, styles.scss */
+#pane3-b { background-color: #E0CF52; }
+/* line 85, styles.scss */
+#pane3-b #button3-b { color: #E0CF52; }
 
-/* line 63, styles.scss */
-#pane3-2 { display: inline-block; background-color: #1278BB; }
-/* line 66, styles.scss */
-#pane3-2 #button3 { color: #1278BB; }
-
-/* line 70, styles.scss */
+/* line 91, styles.scss */
 #pane4 { background-color: #775EA3; }
-/* line 72, styles.scss */
+/* line 93, styles.scss */
 #pane4 #button4 { color: #775EA3; }
 
-/* line 76, styles.scss */
+/* line 97, styles.scss */
 #pane5 { background-color: #DA6060; }
-/* line 78, styles.scss */
+/* line 99, styles.scss */
 #pane5 #button5 { color: #DA6060; }
 
-/* line 86, styles.scss */
+/* line 107, styles.scss */
 .button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
-/* line 101, styles.scss */
-.button:active { margin-top: 2px; }
+/* line 122, styles.scss */
+.button:active { margin-top: 52px; }
+
+/* line 129, styles.scss */
+.slide { transform: translate(-100%, 0); }
