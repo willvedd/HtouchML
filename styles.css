@@ -56,4 +56,6 @@ h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 #pane5 #button5 { color: #DA6060; }
 
 /* line 86, styles.scss */
-.button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 75px; height: 75px; width: 80%; max-width: 200px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
+.button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
+/* line 101, styles.scss */
+.button:active { margin-top: 2px; }

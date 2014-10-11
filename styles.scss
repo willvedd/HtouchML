@@ -91,11 +91,14 @@ h1{
 	font-weight: bold;
 	display: block;
 	border-radius: 5px;
-	line-height: 75px;
-	height: 75px;
+	line-height: 105px;
+	height: 105px;
 	width: 80%;
-	max-width: 200px;
+	max-width: 400px;
 	margin: 50px auto;
 	background-color: #ffffff;
 	border: 1px solid #eeeeee;
+	&:active{
+		margin-top: 2px;
+	}
 }
