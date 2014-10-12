@@ -120,16 +120,14 @@ window.addEventListener('load', function() {
 	$('#button6').click(function(){
 		var vport = $("meta[name='viewport']");
 		if($(vport).hasClass('scalable')){
+			$(this).text('VPort Scalable: OFF');
 			$(vport).attr("content", "minimal-ui, width=device-width, initial-scale=1.0, user-scalable=no");
 			$(vport).removeClass('scalable');
-			$(this).text('VPort Scalable: OFF');
-			console.log("true");
 		}
 		else{
 			$(vport).attr("content", "minimal-ui, width=device-width, initial-scale=1.0, user-scalable=yes");
 			$(vport).addClass('scalable');
 			$(this).text('VPort Scalable: ON');
-			console.log("false");
 		}
 	})
 </script>
