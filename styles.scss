@@ -35,6 +35,10 @@ h1{
 	color: #FFFFFF;
 	font-size: 48px;
 }
+h2{
+	@extend h1;
+	font-size:32px;
+}
 .pane-contain-wide{
 	height: 100%;
 	max-width: 100%;
@@ -146,6 +150,7 @@ h1{
 	max-width: 100%;
 	width: 100%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch
 	position: relative;
 	.pane{
 		height: 100%;
