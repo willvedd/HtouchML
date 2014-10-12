@@ -35,22 +35,22 @@ h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 /* line 87, styles.scss */
 #pane2 { background-color: #7FCAE7; }
 /* line 89, styles.scss */
-#pane2 #button2 { color: #7FCAE7; }
+#pane2 .button { color: #7FCAE7; }
 
 /* line 93, styles.scss */
 #pane3 { background-color: #1478BB; z-index: 0; }
 /* line 96, styles.scss */
-#pane3 #button3 { color: #1478BB; }
+#pane3 .button { color: #1478BB; }
 
 /* line 100, styles.scss */
 #pane3-b { background-color: #E0CF52; z-index: 1; left: 100%; }
 /* line 104, styles.scss */
-#pane3-b #button3-b { color: #E0CF52; }
+#pane3-b .button { color: #E0CF52; }
 
 /* line 108, styles.scss */
 #pane3-c { background-color: #0D2861; z-index: 1; right: 100%; }
 /* line 112, styles.scss */
-#pane3-c #button3-c { color: #0D2861; }
+#pane3-c .button { color: #0D2861; }
 
 /* line 117, styles.scss */
 #pane4 { background-color: #775EA3; }
@@ -60,28 +60,49 @@ h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 /* line 123, styles.scss */
 #pane5 { background-color: #DA6060; z-index: 1; }
 /* line 126, styles.scss */
-#pane5 #button5 { color: #DA6060; }
+#pane5 .button { color: #DA6060; }
 
 /* line 130, styles.scss */
 #pane5-b { background-color: #AA6060; z-index: 0; }
 /* line 133, styles.scss */
-#pane5-b #button5-b { color: #AA6060; }
+#pane5-b .button { color: #AA6060; }
 
 /* line 137, styles.scss */
 #pane6 { background-color: #2D8D63; z-index: 1; }
 /* line 140, styles.scss */
 #pane6 #button6 { color: #2D8D63; }
 
-/* line 148, styles.scss */
+/* line 144, styles.scss */
+#pane7contain { height: 100%; max-width: 100%; width: 100%; overflow: scroll; position: relative; clear: both; }
+/* line 150, styles.scss */
+#pane7contain .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
+/* line 158, styles.scss */
+#pane7contain #pane7-a { background-color: #DFB55D; left: 0%; }
+/* line 161, styles.scss */
+#pane7contain #pane7-a .button { color: #DFB55D; }
+/* line 165, styles.scss */
+#pane7contain #pane7-b { background-color: #755A8A; left: 100%; }
+/* line 168, styles.scss */
+#pane7contain #pane7-b .button { color: #755A8A; }
+/* line 172, styles.scss */
+#pane7contain #pane7-c { background-color: #23343A; left: 200%; }
+/* line 175, styles.scss */
+#pane7contain #pane7-c .button { color: #23343A; }
+/* line 179, styles.scss */
+#pane7contain #pane7-d { background-color: #5A808A; left: 300%; }
+/* line 182, styles.scss */
+#pane7contain #pane7-d .button { color: #5A808A; }
+
+/* line 191, styles.scss */
 .button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
-/* line 163, styles.scss */
+/* line 206, styles.scss */
 .button:active { margin-top: 52px; }
 
-/* line 170, styles.scss */
+/* line 213, styles.scss */
 .slideLeft { -webkit-transform: translate(-100%, 0); -moz-transform: translate(-100%, 0); -ms-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
 
-/* line 173, styles.scss */
+/* line 216, styles.scss */
 .slideRight { -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); transform: translate(100%, 0); }
 
-/* line 176, styles.scss */
+/* line 219, styles.scss */
 .slideDown { -webkit-transform: translate(0, 100%); -moz-transform: translate(0, 100%); -ms-transform: translate(0, 100%); -o-transform: translate(0, 100%); transform: translate(0, 100%); }

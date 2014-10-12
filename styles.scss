@@ -86,14 +86,14 @@ h1{
 }
 #pane2{
 	background-color: #7FCAE7;
-	#button2{
+	.button{
 		color: #7FCAE7;
 	}
 }
 #pane3{
 	background-color: #1478BB;
 	z-index: 0;
-	#button3{
+	.button{
 		color: #1478BB;
 	}
 }
@@ -101,7 +101,7 @@ h1{
 	background-color: #E0CF52;
 	z-index: 1;
 	left: 100%;
-	#button3-b{
+	.button{
 		color: #E0CF52;
 	}
 }
@@ -109,7 +109,7 @@ h1{
 	background-color: #0D2861;
 	z-index: 1;
 	right: 100%;
-	#button3-c{
+	.button{
 		color: #0D2861;
 	}
 }
@@ -123,14 +123,14 @@ h1{
 #pane5{
 	background-color: #DA6060;
 	z-index: 1;
-	#button5{
+	.button{
 		color:#DA6060;
 	}
 }
 #pane5-b{
 	background-color: #AA6060;
 	z-index: 0;
-	#button5-b{
+	.button{
 		color:#AA6060;
 	}
 }
@@ -139,6 +139,49 @@ h1{
 	z-index: 1;
 	#button6{
 		color:#2D8D63;
+	}
+}
+#pane7contain{
+	height: 100%;
+	max-width: 100%;
+	width: 100%;
+	overflow: scroll;
+	position: relative;
+	.pane{
+		height: 100%;
+		width: 100%;
+		display: inline-block;
+		position: absolute;
+	}
+	clear: both;
+
+	#pane7-a{
+		background-color: #DFB55D;
+		left: 0%;
+		.button{
+			color: #DFB55D;
+		}
+	}
+	#pane7-b{
+		background-color: #755A8A;
+		left: 100%;
+		.button{
+			color: #755A8A;
+		}
+	}
+	#pane7-c{
+		background-color: #23343A;
+		left: 200%;
+		.button{
+			color: #23343A;
+		}
+	}
+	#pane7-d{
+		background-color: #5A808A;
+		left: 300%;
+		.button{
+			color: #5A808A;
+		}
 	}
 }
 
