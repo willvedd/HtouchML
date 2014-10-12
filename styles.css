@@ -1,65 +1,111 @@
-/*
-Syntax error: Invalid CSS after "	position": expected ";", was ": relative;"
-        on line 154 of /Users/willvedd/Sites/h_touch_ml/styles.scss
+/* line 20, styles.scss */
+* { padding: 0; margin: 0; -webkit-transition: all 0.33s linear; -moz-transition: all 0.33s linear; -ms-transition: all 0.33s linear; -o-transition: all 0.33s linear; transition: all 0.33s linear; }
 
-Backtrace:
-/Users/willvedd/Sites/h_touch_ml/styles.scss:154
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:569:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	position\": expected \";\", was \": relative;\"\A         on line 154 of /Users/willvedd/Sites/h_touch_ml/styles.scss"; }
+/* line 25, styles.scss */
+html { height: 100%; width: 100%; }
+
+/* line 29, styles.scss */
+body { height: 100%; width: 100%; }
+
+/* line 33, styles.scss */
+h1, h2 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
+
+/* line 38, styles.scss */
+h2 { font-size: 32px; }
+
+/* line 42, styles.scss */
+.pane-contain-wide { height: 100%; max-width: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
+/* line 48, styles.scss */
+.pane-contain-wide .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
+
+/* line 56, styles.scss */
+.pane-contain-tall { height: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
+/* line 61, styles.scss */
+.pane-contain-tall .pane { position: absolute; height: 100%; width: 100%; display: inline-block; float: left; }
+
+/* line 70, styles.scss */
+.pane { height: 100%; width: 100%; display: block; }
+/* line 74, styles.scss */
+.pane .inner-contain { display: table; width: 100%; height: 100%; }
+/* line 78, styles.scss */
+.pane .inner-contain .copy { display: table-cell; vertical-align: middle; text-align: center; }
+
+/* line 85, styles.scss */
+#pane1 { background-color: #7AC7AB; }
+/* line 87, styles.scss */
+#pane1 #button1 { color: #7AC7AB; }
+
+/* line 91, styles.scss */
+#pane2 { background-color: #7FCAE7; }
+/* line 93, styles.scss */
+#pane2 .button { color: #7FCAE7; }
+
+/* line 97, styles.scss */
+#pane3 { background-color: #1478BB; z-index: 0; }
+/* line 100, styles.scss */
+#pane3 .button { color: #1478BB; }
+
+/* line 104, styles.scss */
+#pane3-b { background-color: #E0CF52; z-index: 1; left: 100%; }
+/* line 108, styles.scss */
+#pane3-b .button { color: #E0CF52; }
+
+/* line 112, styles.scss */
+#pane3-c { background-color: #0D2861; z-index: 1; right: 100%; }
+/* line 116, styles.scss */
+#pane3-c .button { color: #0D2861; }
+
+/* line 121, styles.scss */
+#pane4 { background-color: #775EA3; }
+/* line 123, styles.scss */
+#pane4 #button4 { color: #775EA3; }
+
+/* line 127, styles.scss */
+#pane5 { background-color: #DA6060; z-index: 1; }
+/* line 130, styles.scss */
+#pane5 .button { color: #DA6060; }
+
+/* line 134, styles.scss */
+#pane5-b { background-color: #AA6060; z-index: 0; }
+/* line 137, styles.scss */
+#pane5-b .button { color: #AA6060; }
+
+/* line 141, styles.scss */
+#pane6 { background-color: #2D8D63; z-index: 1; }
+/* line 144, styles.scss */
+#pane6 #button6 { color: #2D8D63; }
+
+/* line 148, styles.scss */
+#pane7contain { height: 100%; max-width: 100%; width: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; position: relative; clear: both; }
+/* line 155, styles.scss */
+#pane7contain .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
+/* line 163, styles.scss */
+#pane7contain #pane7-a { background-color: #DFB55D; left: 0%; }
+/* line 166, styles.scss */
+#pane7contain #pane7-a .button { color: #DFB55D; }
+/* line 170, styles.scss */
+#pane7contain #pane7-b { background-color: #755A8A; left: 100%; }
+/* line 173, styles.scss */
+#pane7contain #pane7-b .button { color: #755A8A; }
+/* line 177, styles.scss */
+#pane7contain #pane7-c { background-color: #23343A; left: 200%; }
+/* line 180, styles.scss */
+#pane7contain #pane7-c .button { color: #23343A; }
+/* line 184, styles.scss */
+#pane7contain #pane7-d { background-color: #5A808A; left: 300%; }
+/* line 187, styles.scss */
+#pane7contain #pane7-d .button { color: #5A808A; }
+
+/* line 196, styles.scss */
+.button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
+/* line 211, styles.scss */
+.button:active { margin-top: 52px; }
+
+/* line 218, styles.scss */
+.slideLeft { -webkit-transform: translate(-100%, 0); -moz-transform: translate(-100%, 0); -ms-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
+
+/* line 221, styles.scss */
+.slideRight { -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); transform: translate(100%, 0); }
+
+/* line 224, styles.scss */
+.slideDown { -webkit-transform: translate(0, 100%); -moz-transform: translate(0, 100%); -ms-transform: translate(0, 100%); -o-transform: translate(0, 100%); transform: translate(0, 100%); }
