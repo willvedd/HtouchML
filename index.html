@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta id="#viewport" name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Touch Prototype</title>
 	<link href="styles.css" rel="stylesheet">
 </head>
@@ -30,8 +30,9 @@
 		<div id="pane3" class="pane">
 			<div class="inner-contain">
 				<div class="copy">
-					<h1>Pane 3-b</h1>
+					<h1>Pane 3</h1>
 					<a onclick='pane_slide("pane3-b")' class="button" id="button3"><</a>
+					<a class="button" id="button3-left">></a>
 				</div>
 			</div>
 		</div>
@@ -40,6 +41,14 @@
 				<div class="copy">
 					<h1>Pane 3-b</h1>
 					<a onclick='pane_slideback("pane3-b")' class="button">></a>
+				</div>
+			</div>
+		</div>
+		<div id="pane3-c" class="pane">
+			<div class="inner-contain">
+				<div class="copy">
+					<h1>Pane 3-c</h1>
+					<a onclick='pane_slideback("pane3-c")' class="button"><</a>
 				</div>
 			</div>
 		</div>
@@ -74,6 +83,15 @@
 		</div>
 	</div>
 
+	<div id="pane6" class="pane">
+		<div class="inner-contain">
+			<div class="copy">
+				<h1>Pane 6</h1>
+				<a class="button" id="button6">Disable Min Viewport</a>
+			</div>
+		</div>
+	</div>
+
 </body>
 
 <script type='application/javascript' src='fastclick.js'></script>
@@ -95,6 +113,15 @@ window.addEventListener('load', function() {
 		var pane = document.getElementById($id);
 		pane.className = pane.className + " slideDown";
 	};
+	$('#button3-left').click(function(){
+		$('#pane3-c').addClass('slideRight');
+		
+	});
+	$('#button6').click(function(){
+		console.log("clicked");
+		$("meta[name='viewport']").attr("content", "minimal-ui, width=device-width, initial-scale=1.0, user-scalable=yes");
+		
+	})
 </script>
 
 </html>

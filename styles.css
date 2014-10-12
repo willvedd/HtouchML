@@ -11,64 +11,77 @@ body { height: 100%; width: 100%; }
 h1 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 
 /* line 38, styles.scss */
-.pane-contain-wide { height: 100%; width: 200%; clear: both; }
-/* line 41, styles.scss */
-.pane-contain-wide .pane { height: 100%; width: 50%; display: inline-block; float: left; -webkit-overflow-scrolling: touch; }
+.pane-contain-wide { height: 100%; max-width: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
+/* line 44, styles.scss */
+.pane-contain-wide .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
 
-/* line 50, styles.scss */
+/* line 52, styles.scss */
 .pane-contain-tall { height: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
-/* line 55, styles.scss */
-.pane-contain-tall .pane { position: absolute; top: 0; left: 0; height: 100%; width: 100%; display: inline-block; float: left; -webkit-overflow-scrolling: touch; }
+/* line 57, styles.scss */
+.pane-contain-tall .pane { position: absolute; height: 100%; width: 100%; display: inline-block; float: left; }
 
-/* line 67, styles.scss */
+/* line 66, styles.scss */
 .pane { height: 100%; width: 100%; display: block; }
-/* line 71, styles.scss */
+/* line 70, styles.scss */
 .pane .inner-contain { display: table; width: 100%; height: 100%; }
-/* line 75, styles.scss */
+/* line 74, styles.scss */
 .pane .inner-contain .copy { display: table-cell; vertical-align: middle; text-align: center; }
 
-/* line 82, styles.scss */
+/* line 81, styles.scss */
 #pane1 { background-color: #7AC7AB; }
-/* line 84, styles.scss */
+/* line 83, styles.scss */
 #pane1 #button1 { color: #7AC7AB; }
 
-/* line 88, styles.scss */
+/* line 87, styles.scss */
 #pane2 { background-color: #7FCAE7; }
-/* line 90, styles.scss */
+/* line 89, styles.scss */
 #pane2 #button2 { color: #7FCAE7; }
 
-/* line 94, styles.scss */
-#pane3 { background-color: #1478BB; }
+/* line 93, styles.scss */
+#pane3 { background-color: #1478BB; z-index: 0; }
 /* line 96, styles.scss */
 #pane3 #button3 { color: #1478BB; }
 
 /* line 100, styles.scss */
-#pane3-b { background-color: #E0CF52; }
-/* line 102, styles.scss */
+#pane3-b { background-color: #E0CF52; z-index: 1; left: 100%; }
+/* line 104, styles.scss */
 #pane3-b #button3-b { color: #E0CF52; }
 
 /* line 108, styles.scss */
+#pane3-c { background-color: #0D2861; z-index: 1; right: 100%; }
+/* line 112, styles.scss */
+#pane3-c #button3-c { color: #0D2861; }
+
+/* line 117, styles.scss */
 #pane4 { background-color: #775EA3; }
-/* line 110, styles.scss */
+/* line 119, styles.scss */
 #pane4 #button4 { color: #775EA3; }
 
-/* line 114, styles.scss */
+/* line 123, styles.scss */
 #pane5 { background-color: #DA6060; z-index: 1; }
-/* line 117, styles.scss */
+/* line 126, styles.scss */
 #pane5 #button5 { color: #DA6060; }
 
-/* line 121, styles.scss */
+/* line 130, styles.scss */
 #pane5-b { background-color: #AA6060; z-index: 0; }
-/* line 124, styles.scss */
+/* line 133, styles.scss */
 #pane5-b #button5-b { color: #AA6060; }
 
-/* line 132, styles.scss */
+/* line 137, styles.scss */
+#pane6 { background-color: #2D8D63; z-index: 1; }
+/* line 140, styles.scss */
+#pane6 #button6 { color: #2D8D63; }
+
+/* line 148, styles.scss */
 .button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
-/* line 147, styles.scss */
+/* line 163, styles.scss */
 .button:active { margin-top: 52px; }
 
-/* line 154, styles.scss */
+/* line 170, styles.scss */
 .slideLeft { -webkit-transform: translate(-100%, 0); -moz-transform: translate(-100%, 0); -ms-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
 
-/* line 157, styles.scss */
+/* line 173, styles.scss */
+.slideRight { -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); transform: translate(100%, 0); }
+
+/* line 176, styles.scss */
 .slideDown { -webkit-transform: translate(0, 100%); -moz-transform: translate(0, 100%); -ms-transform: translate(0, 100%); -o-transform: translate(0, 100%); transform: translate(0, 100%); }
