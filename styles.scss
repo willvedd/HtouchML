@@ -29,6 +29,8 @@ html{
 body{
 	height: 100%;
 	width: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 h1{
 	font-family: helvetica,arial,sans-serif;
