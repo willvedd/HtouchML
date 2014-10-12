@@ -122,11 +122,13 @@ window.addEventListener('load', function() {
 		if($(vport).hasClass('scalable')){
 			$(vport).attr("content", "minimal-ui, width=device-width, initial-scale=1.0, user-scalable=no");
 			$(vport).removeClass('scalable');
+			$(this).text('VPort Scalable: OFF');
 			console.log("true");
 		}
 		else{
 			$(vport).attr("content", "minimal-ui, width=device-width, initial-scale=1.0, user-scalable=yes");
 			$(vport).addClass('scalable');
+			$(this).text('VPort Scalable: ON');
 			console.log("false");
 		}
 	})
