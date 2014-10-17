@@ -77,23 +77,38 @@ h2{
 		display: table;
 		width: 100%;
 		height: 100%;
+		z-index: 2;
+
 		.copy{
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
 		}
 	}
+	&:hover{
+		.photo-bg{
+			opacity: 1;
+		}
+	}
 }
 #pane1{
 	background-color: #7AC7AB;
-	#button1{
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=436)!important;
+	}
+	.button{
 		color: #7AC7AB;
 	}
+	
+	
 }
 #pane2{
 	background-color: #7FCAE7;
 	.button{
 		color: #7FCAE7;
+	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=433)!important;
 	}
 }
 #pane3{
@@ -101,6 +116,9 @@ h2{
 	z-index: 0;
 	.button{
 		color: #1478BB;
+	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=434)!important;
 	}
 }
 #pane3-b{
@@ -110,6 +128,9 @@ h2{
 	.button{
 		color: #E0CF52;
 	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=435)!important;
+	}
 }
 #pane3-c{
 	background-color: #0D2861;
@@ -118,12 +139,18 @@ h2{
 	.button{
 		color: #0D2861;
 	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=432)!important;
+	}
 }
 
 #pane4{
 	background-color: #775EA3;
 	#button4{
 		color: #775EA3;
+	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=431)!important;
 	}
 }
 #pane5{
@@ -132,6 +159,9 @@ h2{
 	.button{
 		color:#DA6060;
 	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=430)!important;
+	}
 }
 #pane5-b{
 	background-color: #AA6060;
@@ -139,12 +169,18 @@ h2{
 	.button{
 		color:#AA6060;
 	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=429)!important;
+	}
 }
 #pane6{
 	background-color: #2D8D63;
 	z-index: 1;
 	#button6{
 		color:#2D8D63;
+	}
+	&.photo-bg{
+		background-image: url(https://unsplash.it/2000/1000?image=428)!important;
 	}
 }
 #pane7contain{
@@ -168,12 +204,18 @@ h2{
 		.button{
 			color: #DFB55D;
 		}
+		&.photo-bg{
+			background-image: url(https://unsplash.it/2000/1000?image=427)!important;
+		}
 	}
 	#pane7-b{
 		background-color: #755A8A;
 		left: 100%;
 		.button{
 			color: #755A8A;
+		}
+		&.photo-bg{
+			background-image: url(https://unsplash.it/2000/1000?image=426)!important;
 		}
 	}
 	#pane7-c{
@@ -182,6 +224,9 @@ h2{
 		.button{
 			color: #23343A;
 		}
+		&.photo-bg{
+			background-image: url(https://unsplash.it/2000/1000?image=425)!important;
+		}
 	}
 	#pane7-d{
 		background-color: #5A808A;
@@ -189,10 +234,15 @@ h2{
 		.button{
 			color: #5A808A;
 		}
+		&.photo-bg{
+			background-image: url(https://unsplash.it/2000/1000?image=424)!important;
+		}
 	}
 }
 
-
+.photo-bg{
+	background-size: cover;
+}
 
 
 .button{
@@ -226,4 +276,3 @@ h2{
 .slideDown{
 	@include transform(translate(0,100%));
 }
-

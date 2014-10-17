@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
 </head>
-<body id="container">
+<body id="container photos">
 	<div id="pane1" class="pane">
 		<div class="inner-contain">
 			<div class="copy">
@@ -30,12 +30,13 @@
 		<div class="inner-contain">
 			<div class="copy">
 				<h1>Pane 2</h1>
-				<a href="#pane3contain" class="button" id="button2">Press</a>
+				<a class="button" id="button2">Toggle Photos</a>
 			</div>
 		</div>
 	</div>
 
 	<div id="pane3contain" class="pane-contain-wide">
+
 		<div id="pane3" class="pane">
 			<div class="inner-contain">
 				<div class="copy">
@@ -145,17 +146,23 @@ window.addEventListener('load', function() {
 }, false);
 </script>
 <script type="text/javascript">
-	function pane_slide($id){
-		var pane = document.getElementById($id);
-		pane.className = pane.className + " slideLeft";
+	function pane_slide(id){
+		console.log("slide");
+		$('#'+id).addClass('slideLeft');
 	};
-	function pane_slideback($id){
-		document.getElementById($id).className = "pane";
+	function pane_slideback(id){
+		console.log("slideback");
+		$('#'+id).removeClass('slideLeft');
+		$('#'+id).removeClass('slideRight');
+		$('#'+id).removeClass('slideDown');
 	};
-	function pane_slidedown($id){
-		var pane = document.getElementById($id);
-		pane.className = pane.className + " slideDown";
+	function pane_slidedown(id){
+		console.log("slidedown");
+		$('#'+id).addClass('slideDown');
 	};
+	$('#button2').click(function(){
+		$('.pane').toggleClass('photo-bg');
+	});
 	$('#button3-left').click(function(){
 		$('#pane3-c').addClass('slideRight');
 		
