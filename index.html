@@ -69,7 +69,7 @@
 		<div class="inner-contain">
 			<div class="copy">
 				<h1>Pane 4</h1>
-				<a href="#pane5contain" class="button" id="button4">Press</a>
+				<a class="button" id="button4">Toggle Heights</a>
 			</div>
 		</div>
 	</div>
@@ -166,6 +166,9 @@ window.addEventListener('load', function() {
 	$('#button3-left').click(function(){
 		$('#pane3-c').addClass('slideRight');
 		
+	});
+	$('#button4').click(function(){
+		$('.pane,.pane-contain-tall,.pane-contain-wide').toggleClass('thirds');
 	});
 	$('#button6').click(function(){
 		var vport = $("meta[name='viewport']");

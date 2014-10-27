@@ -47,6 +47,9 @@ h2{
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	&.thirds{
+		height: 33.3333333%!important;
+	}
 	.pane{
 		height: 100%;
 		width: 100%;
@@ -55,14 +58,18 @@ h2{
 	}
 	clear: both;
 }
+
 .pane-contain-tall{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	&.thirds{
+		height: 33.3333333%;
+	}
 	.pane{
 		position: absolute;
-		height: 100%;
+		height: 100%!important;
 		width: 100%;
 		display: inline-block;
 		float: left;
@@ -85,10 +92,18 @@ h2{
 			text-align: center;
 		}
 	}
+	&.thirds{
+		height: 33.3333333%!important;
+	}
 	&:hover{
 		.photo-bg{
 			opacity: 1;
 		}
+	}
+}
+.thirds{
+	.pane{
+		height: 100%!important;
 	}
 }
 #pane1{
