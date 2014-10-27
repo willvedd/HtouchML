@@ -94,7 +94,7 @@ h2{
 #pane1{
 	background-color: #7AC7AB;
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=436)!important;
+		background-image: url(img/image1.jpg)!important;
 	}
 	.button{
 		color: #7AC7AB;
@@ -108,7 +108,7 @@ h2{
 		color: #7FCAE7;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=433)!important;
+		background-image: url(img/image2.jpg)!important;
 	}
 }
 #pane3{
@@ -118,7 +118,7 @@ h2{
 		color: #1478BB;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=434)!important;
+		background-image: url(img/image3.jpg)!important;
 	}
 }
 #pane3-b{
@@ -129,7 +129,7 @@ h2{
 		color: #E0CF52;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=435)!important;
+		background-image: url(img/image4.jpg)!important;
 	}
 }
 #pane3-c{
@@ -140,7 +140,7 @@ h2{
 		color: #0D2861;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=432)!important;
+		background-image: url(img/image5.jpg)!important;
 	}
 }
 
@@ -150,7 +150,7 @@ h2{
 		color: #775EA3;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=431)!important;
+		background-image: url(img/image6.jpg)!important;
 	}
 }
 #pane5{
@@ -160,7 +160,7 @@ h2{
 		color:#DA6060;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=430)!important;
+		background-image: url(img/image7.jpeg)!important;
 	}
 }
 #pane5-b{
@@ -170,7 +170,7 @@ h2{
 		color:#AA6060;
 	}
 	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=429)!important;
+		background-image: url(img/image8.jpeg)!important;
 	}
 }
 #pane6{
@@ -179,8 +179,8 @@ h2{
 	#button6{
 		color:#2D8D63;
 	}
-	&.photo-bg{
-		background-image: url(https://unsplash.it/2000/1000?image=428)!important;
+	&.photo-bg{ 
+		background-image: url(img/image9.jpg)!important;
 	}
 }
 #pane7contain{
@@ -205,7 +205,7 @@ h2{
 			color: #DFB55D;
 		}
 		&.photo-bg{
-			background-image: url(https://unsplash.it/2000/1000?image=427)!important;
+			background-image: url(img/image10.jpeg)!important;
 		}
 	}
 	#pane7-b{
@@ -215,7 +215,7 @@ h2{
 			color: #755A8A;
 		}
 		&.photo-bg{
-			background-image: url(https://unsplash.it/2000/1000?image=426)!important;
+			background-image: url(img/image11.jpg)!important;
 		}
 	}
 	#pane7-c{
@@ -225,7 +225,7 @@ h2{
 			color: #23343A;
 		}
 		&.photo-bg{
-			background-image: url(https://unsplash.it/2000/1000?image=425)!important;
+			background-image: url(img/image12.jpeg)!important;
 		}
 	}
 	#pane7-d{
@@ -235,7 +235,7 @@ h2{
 			color: #5A808A;
 		}
 		&.photo-bg{
-			background-image: url(https://unsplash.it/2000/1000?image=424)!important;
+			background-image: url(img/image13.jpg)!important;
 		}
 	}
 }
