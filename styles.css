@@ -1,142 +1,147 @@
 /* line 20, styles.scss */
 * { padding: 0; margin: 0; -webkit-transition: all 0.33s linear; -moz-transition: all 0.33s linear; -ms-transition: all 0.33s linear; -o-transition: all 0.33s linear; transition: all 0.33s linear; }
+/* line 24, styles.scss */
+*:-webkit-scrollbar { display: none; }
 
-/* line 25, styles.scss */
+/* line 28, styles.scss */
 html { height: 100%; width: 100%; }
 
-/* line 29, styles.scss */
+/* line 32, styles.scss */
 body { height: 100%; width: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 
-/* line 35, styles.scss */
+/* line 38, styles.scss */
 h1, h2 { font-family: helvetica,arial,sans-serif; color: #FFFFFF; font-size: 48px; }
 
-/* line 40, styles.scss */
+/* line 43, styles.scss */
 h2 { font-size: 32px; }
 
-/* line 44, styles.scss */
+/* line 47, styles.scss */
 .pane-contain-wide { height: 100%; max-width: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
-/* line 50, styles.scss */
+/* line 53, styles.scss */
 .pane-contain-wide .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
 
-/* line 58, styles.scss */
+/* line 61, styles.scss */
 .pane-contain-tall { height: 100%; width: 100%; overflow: hidden; position: relative; clear: both; }
-/* line 63, styles.scss */
+/* line 66, styles.scss */
 .pane-contain-tall .pane { position: absolute; height: 100%; width: 100%; display: inline-block; float: left; }
 
-/* line 72, styles.scss */
+/* line 75, styles.scss */
 .pane { height: 100%; width: 100%; display: block; }
-/* line 76, styles.scss */
+/* line 79, styles.scss */
 .pane .inner-contain { display: table; width: 100%; height: 100%; z-index: 2; }
-/* line 82, styles.scss */
+/* line 85, styles.scss */
 .pane .inner-contain .copy { display: table-cell; vertical-align: middle; text-align: center; }
-/* line 89, styles.scss */
+/* line 92, styles.scss */
 .pane:hover .photo-bg { opacity: 1; }
 
-/* line 94, styles.scss */
+/* line 97, styles.scss */
 #pane1 { background-color: #7AC7AB; }
-/* line 96, styles.scss */
-#pane1.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=436) !important; }
 /* line 99, styles.scss */
+#pane1.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=436) !important; }
+/* line 102, styles.scss */
 #pane1 .button { color: #7AC7AB; }
 
-/* line 105, styles.scss */
+/* line 108, styles.scss */
 #pane2 { background-color: #7FCAE7; }
-/* line 107, styles.scss */
-#pane2 .button { color: #7FCAE7; }
 /* line 110, styles.scss */
+#pane2 .button { color: #7FCAE7; }
+/* line 113, styles.scss */
 #pane2.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=433) !important; }
 
-/* line 114, styles.scss */
-#pane3 { background-color: #1478BB; z-index: 0; }
 /* line 117, styles.scss */
-#pane3 .button { color: #1478BB; }
+#pane3 { background-color: #1478BB; z-index: 0; }
 /* line 120, styles.scss */
+#pane3 .button { color: #1478BB; }
+/* line 123, styles.scss */
 #pane3.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=434) !important; }
 
-/* line 124, styles.scss */
+/* line 127, styles.scss */
 #pane3-b { background-color: #E0CF52; z-index: 1; left: 100%; }
-/* line 128, styles.scss */
-#pane3-b .button { color: #E0CF52; }
 /* line 131, styles.scss */
+#pane3-b .button { color: #E0CF52; }
+/* line 134, styles.scss */
 #pane3-b.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=435) !important; }
 
-/* line 135, styles.scss */
+/* line 138, styles.scss */
 #pane3-c { background-color: #0D2861; z-index: 1; right: 100%; }
-/* line 139, styles.scss */
-#pane3-c .button { color: #0D2861; }
 /* line 142, styles.scss */
+#pane3-c .button { color: #0D2861; }
+/* line 145, styles.scss */
 #pane3-c.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=432) !important; }
 
-/* line 147, styles.scss */
+/* line 150, styles.scss */
 #pane4 { background-color: #775EA3; }
-/* line 149, styles.scss */
-#pane4 #button4 { color: #775EA3; }
 /* line 152, styles.scss */
+#pane4 #button4 { color: #775EA3; }
+/* line 155, styles.scss */
 #pane4.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=431) !important; }
 
-/* line 156, styles.scss */
-#pane5 { background-color: #DA6060; z-index: 1; }
 /* line 159, styles.scss */
-#pane5 .button { color: #DA6060; }
+#pane5 { background-color: #DA6060; z-index: 1; }
 /* line 162, styles.scss */
+#pane5 .button { color: #DA6060; }
+/* line 165, styles.scss */
 #pane5.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=430) !important; }
 
-/* line 166, styles.scss */
-#pane5-b { background-color: #AA6060; z-index: 0; }
 /* line 169, styles.scss */
-#pane5-b .button { color: #AA6060; }
+#pane5-b { background-color: #AA6060; z-index: 0; }
 /* line 172, styles.scss */
+#pane5-b .button { color: #AA6060; }
+/* line 175, styles.scss */
 #pane5-b.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=429) !important; }
 
-/* line 176, styles.scss */
-#pane6 { background-color: #2D8D63; z-index: 1; }
 /* line 179, styles.scss */
-#pane6 #button6 { color: #2D8D63; }
+#pane6 { background-color: #2D8D63; z-index: 1; }
 /* line 182, styles.scss */
+#pane6 #button6 { color: #2D8D63; }
+/* line 185, styles.scss */
 #pane6.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=428) !important; }
 
-/* line 186, styles.scss */
+/* line 189, styles.scss */
 #pane7contain { height: 100%; max-width: 100%; width: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; position: relative; clear: both; }
-/* line 193, styles.scss */
+/* line 196, styles.scss */
 #pane7contain .pane { height: 100%; width: 100%; display: inline-block; position: absolute; }
-/* line 201, styles.scss */
-#pane7contain #pane7-a { background-color: #DFB55D; left: 0%; }
 /* line 204, styles.scss */
-#pane7contain #pane7-a .button { color: #DFB55D; }
+#pane7contain #pane7-a { background-color: #DFB55D; left: 0%; }
 /* line 207, styles.scss */
+#pane7contain #pane7-a .button { color: #DFB55D; }
+/* line 210, styles.scss */
 #pane7contain #pane7-a.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=427) !important; }
-/* line 211, styles.scss */
-#pane7contain #pane7-b { background-color: #755A8A; left: 100%; }
 /* line 214, styles.scss */
-#pane7contain #pane7-b .button { color: #755A8A; }
+#pane7contain #pane7-b { background-color: #755A8A; left: 100%; }
 /* line 217, styles.scss */
+#pane7contain #pane7-b .button { color: #755A8A; }
+/* line 220, styles.scss */
 #pane7contain #pane7-b.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=426) !important; }
-/* line 221, styles.scss */
-#pane7contain #pane7-c { background-color: #23343A; left: 200%; }
 /* line 224, styles.scss */
-#pane7contain #pane7-c .button { color: #23343A; }
+#pane7contain #pane7-c { background-color: #23343A; left: 200%; }
 /* line 227, styles.scss */
+#pane7contain #pane7-c .button { color: #23343A; }
+/* line 230, styles.scss */
 #pane7contain #pane7-c.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=425) !important; }
-/* line 231, styles.scss */
-#pane7contain #pane7-d { background-color: #5A808A; left: 300%; }
 /* line 234, styles.scss */
-#pane7contain #pane7-d .button { color: #5A808A; }
+#pane7contain #pane7-d { background-color: #5A808A; left: 300%; }
 /* line 237, styles.scss */
+#pane7contain #pane7-d .button { color: #5A808A; }
+/* line 240, styles.scss */
 #pane7contain #pane7-d.photo-bg { background-image: url(https://unsplash.it/2000/1000?image=424) !important; }
 
-/* line 243, styles.scss */
-.photo-bg { background-size: cover; }
+/* line 246, styles.scss */
+.photo-bg { background-size: cover; background-position: %50,%50; }
 
-/* line 248, styles.scss */
+/* line 252, styles.scss */
 .button { text-decoration: none; cursor: pointer; font-size: 24px; font-family: helvetica,arial,sans-serif; font-weight: bold; display: block; border-radius: 5px; line-height: 105px; height: 105px; width: 80%; max-width: 400px; margin: 50px auto; background-color: #ffffff; border: 1px solid #eeeeee; }
-/* line 263, styles.scss */
+/* line 267, styles.scss */
 .button:active { margin-top: 52px; }
 
-/* line 270, styles.scss */
+/* line 274, styles.scss */
 .slideLeft { -webkit-transform: translate(-100%, 0); -moz-transform: translate(-100%, 0); -ms-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
 
-/* line 273, styles.scss */
+/* line 277, styles.scss */
 .slideRight { -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); transform: translate(100%, 0); }
 
-/* line 276, styles.scss */
+/* line 280, styles.scss */
 .slideDown { -webkit-transform: translate(0, 100%); -moz-transform: translate(0, 100%); -ms-transform: translate(0, 100%); -o-transform: translate(0, 100%); transform: translate(0, 100%); }
+
+/* line 285, styles.scss */
+.element::-webkit-scrollbar { width: 0 !important; }
